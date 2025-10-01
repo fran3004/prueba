@@ -221,7 +221,13 @@ button:hover {
   background: #1ebe5a;
 }
 
-/* Responsive */
+/* Navbar toggle solo móvil */
+#nav-toggle {
+  display: none; /* Oculto en PC */
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -250,7 +256,7 @@ button:hover {
   }
 
   #nav-toggle {
-    display: block;
+    display: block; /* Visible solo en móvil */
     align-self: flex-end;
     margin: 0.5em 1em;
   }
@@ -269,6 +275,7 @@ button:hover {
     gap: 1em;
   }
 }
+
 footer {
   background-color: #b30000;
   color: white;
